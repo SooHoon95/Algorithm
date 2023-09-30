@@ -8,17 +8,18 @@ func solution(_ k:Int, _ m:Int, _ score:[Int]) -> Int {
     /*
      1. score.count = 사과 갯수
      2. 사과 갯수 / m 해서 총 몇 상자 나오는지 구하기
-     3. 젤 낮은 점수끼리 묶어서 배열만들기
+     3. 정렬해서 내림차순으로 박스에 담기
      4. 한 상자당 점수 구하기
      5. 토탈 구하기
      */
-    
-    let appCount = score.count
-    let boxCount = appCount / m
+    let sortedScore = score.sorted(by: >)
     var boxes: [[Int]] = []
     
-    let a = score.sorted(by: <)
-    print(a)
+    // 1. 세개씩 짤라서 담는 방법
+    // 2.
+    for i in 0..<score.count {
+        sortedScore[i]
+    }
     
     return 0
 }
