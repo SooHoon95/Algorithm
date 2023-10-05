@@ -1,13 +1,5 @@
-//
-//  main.swift
-//  9. 빠른입력 A+B
-//
-//  Created by 최수훈 on 2023/10/03.
-//
-
 import Foundation
 
-// 라이노님의 FileIO
 final class FileIO {
     private var buffer:[UInt8]
     private var index: Int
@@ -53,21 +45,18 @@ final class FileIO {
     }
 }
 
-// 풀이
+let file = FileIO()
+var result = 1
 
-var answer = ""
 func solution() {
     let a = file.readInt(), b = file.readInt()
-    answer += "\(a + b)\n"
+    
+    result = a + b
+    if a + b != 0 { print(result) }
 }
 
-let file = FileIO()
-
-
-let n = file.readInt()
-for _ in 0..<n {
+while result != 0 {
     solution()
 }
 
-print(answer)
 
