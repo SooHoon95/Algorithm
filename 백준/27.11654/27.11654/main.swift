@@ -8,7 +8,7 @@
 import Foundation
 
 
-let input = readLine()!
+ㅌㅈ
 
 // 1.
 //print(input.unicodeScalars.first!.value)
